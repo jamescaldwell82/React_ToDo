@@ -1,0 +1,201 @@
+section.todos {
+    background-image: url(/src/images/background.jpg);
+    background-size: 100%;
+    min-height: 78vh;
+}
+section.todos hr {
+    height: 4px;
+    background-color: rgb(233,236, 22);
+}
+section.todos article.intro {
+    border-bottom: 4px solid rgb(233,236, 22);
+}
+.taskGallery {
+    padding: 3em 0;
+}
+
+div.singleTodo {
+    width: 75%;
+    padding: 1em;
+    margin: 3px auto;
+    border: 1px solid #5e5e5e;
+    position: relative;
+    background-color: rgba(255,255,255,.9);
+    overflow:hidden;
+}
+
+
+div.singleTodo h1 {
+    font-size: 2em;
+    width: 80%;
+}
+
+
+div.singleTodo span {
+    margin-left: 3em;
+    font-size: .5em;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    background-color: black;
+    padding: 1.75em .75em;
+    font-weight: bold;
+    width: 25%;
+    cursor: pointer;
+}
+
+article.todo-complete h2, article.todo-incomplete h2 {
+    margin-bottom: 0;
+}
+span.todo-count {
+    font-size: .5em;
+    display: block;
+}
+
+div.singleTodo p {
+    position: absolute;
+    top: .25em;
+    left:.5em;
+    font-weight: bold;
+    color: rgb(100,100,100); 
+    font-size: .85em;
+}
+
+div.singleTodo div {
+    margin: 0;
+}
+
+div.createTodo {
+    padding: 0;
+    position: relative;
+    padding: 5px;
+    background-color: black;
+    border: 1px solid rgb(189, 189, 189);
+}
+
+div.createTodo div:first-child {
+    width: 75%;   
+}
+
+div.createTodo div:first-child input{
+    border-radius: 0;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: rgb(233,236, 22);
+    font-size:1.2em;
+}
+
+div.createTodo div:first-child hr {
+    background-color: rgb(233,236, 22);
+    margin:3px;
+}
+div.createTodo div:first-child select {
+    background-color: transparent;
+    border: none;
+    margin-top: 0;
+    color: #000;
+    background-color: rgb(255,255,255);
+    display:block;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    position:relative;
+    right: 2px;
+    border-radius: 0;
+}
+
+div.createTodo div:first-child select:active, div.createTodo div:first-child select:focus {
+    border: none;
+}
+div.createTodo div:first-child option {
+    background-color: transparent;
+}
+
+div.createTodo div:first-child input::placeholder, div.createTodo div:first-child input:focus {
+    color: rgb(233,236, 22);
+    box-shadow: none;
+}
+
+div.createTodo div:last-child {
+    width: 25%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+div.createTodo button {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;  
+    border: none;
+    outline: none;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    transition:ease-in-out .5s;
+    border-left: 1px solid gray;
+}
+
+div.createTodo button:hover {
+    background-color: rgb(233,236, 22);
+    color: rgb(50,50,50);
+    border-left: 1px solid rgb(233,236, 22)
+}
+.galleryButtons {
+    width: 75%;
+    margin: auto;
+}
+
+.galleryButtons .btn.btn-black{
+    transition: .25s ease-in-out;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.galleryButtons .btn.btn-black:hover {
+    background-color: rgb(100,100,100);
+    color: white;
+}
+
+
+.galleryButtons .btn {
+    height: 4em;
+    width: 13em;
+    border-radius: 0;
+}
+
+#deleteLink {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 10px 15px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-top-right-radius: 4px;
+}
+
+#deleteLink:hover {
+    color: rgb(233,236, 22);
+    border-color: rgb(233,236, 22);
+    background-color: black;
+}
+
+@media only screen and (max-width: 1023px){
+    div.singleTodo {
+        width: 95%;
+    }
+    div.createTodo div:last-child {
+        width: 25%;
+    }
+}
+
+

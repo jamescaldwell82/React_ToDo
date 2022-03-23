@@ -1,0 +1,8 @@
+.notFound{
+    min-height: 84vh;
+    background-image: url(/src/images/light.jpg);
+    background-size: 85%;
+    background-position: center;
+    padding-top:75vh;
+    color: white;
+}
